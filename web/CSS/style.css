@@ -1,0 +1,386 @@
+/* 
+    Document   : style
+    Created on : 24 août 2011, 20:07:29
+    Author     : pj
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body {
+    font-family: Arial, serif;
+}
+a img {
+    border: none;
+}
+a {
+    color: #637f97;
+}
+a:hover {
+    text-decoration: none;
+    color: #d0514b;
+}
+div.clearBoth {
+    clear: both;
+}
+/*CONNEXION*/
+header div.connexion {
+    font-size: 0.6em;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+header div.connexion div.erreur {
+    border: solid 1px #cc0000;
+    background-color: #e3cec7;
+    color: #000000;
+    font-weight: 700;
+    font-family: Arial,serif;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #660000;
+}
+header div.logo {
+    background-image: url("./../GFXs/logo.png");
+    width: 560px;
+    height: 110px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+}
+/*MENU*/
+nav ul.menu li {
+    background-image: url('./../GFXs/gradient1.png');
+    background-repeat: repeat-x;
+    margin-right: 1px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 15px 10px 15px 10px;
+    border: solid 1px #949394;
+    cursor: pointer;
+    font-family: Verdanna, sans-serif;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #333333;
+}
+nav ul.menu li:hover {
+    background-image: url('./../GFXs/gradient2.png');
+    background-repeat: repeat-x;
+    border: solid 1px #b93157;
+}
+nav ul.menu li a {
+    color: #000000;
+    text-decoration: none;
+}
+nav ul.menu li a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+/* CONTENU */
+section {
+    min-height: 500px;
+    background-color: #c4c4c6;
+    font-size: 0.8em;
+}
+section strong {
+    font-weight: 500;
+}
+section h1 {
+    font-size: 1.5em;
+    color: #ca8b36;
+}
+section h2 {
+    font-size: 1.3em;
+    color: #6396cd;
+}
+section h2 strong {
+    font-weight: 600;
+}
+section div.info {
+    background-color: #a1978d;
+    font-weight: 600;
+    color: #333333;
+    font-size: 1em;
+}
+section div.info strong {
+    font-weight: 600;
+}
+section ul.reseauxSoc {
+    margin-left: 15%;
+    padding: 0px;
+}
+section ul.reseauxSoc2 {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+section ul.reseauxSoc li,
+section ul.reseauxSoc2 li {
+    list-style: none;
+    margin-left: 5px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+section div.erreur {
+    border: solid 1px #cc0000;
+    background-color: #e3cec7;
+    color: #000000;
+    font-weight: 700;
+    font-family: Arial,serif;
+    padding: 5px 5px 5px 5px;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #660000;
+}
+section div.captcha {
+    background-image: url("./../captcha.png");
+    width: 160px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+section div.captchaDroite {
+    display: inline-block;
+    vertical-align: middle;
+}
+section span.clign,
+div.haut span.clign {
+    color: #e7882d;
+    text-decoration: blink;
+    font-weight: 700;
+}
+section div.listeAnnonce {
+    border: solid 1px #adadad;
+    background-color: #ffffeb;
+    width: 70%;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.listeAnnonce:hover {
+    background-color: #ffa86f;
+    width: 70%;
+    margin: auto;
+}
+section div.listeAnnonce2 {
+    border: solid 1px #adadad;
+    background-color: #ffffeb;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.listeAnnonce2:hover {
+    background-color: #ffa86f;
+    width: 80%;
+    margin: auto;
+}
+section div.listeAnnoncePub {
+    border: solid 1px #adadad;
+    background-color: #ffffeb;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.listeAnnoncePub2 {
+    border: solid 1px #adadad;
+    background-color: #ffffeb;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.listeAnnonceGauche {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    border: solid 1px #000000;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #888888;
+}
+section div.listeAnnonceDroite {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+    width: 75%;
+}
+section div.listeAnnonceDroite h1 {
+    font-weight: 500;
+    font-size: 1em;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+section div.pages {
+    margin: auto;
+    text-align: center;
+}
+section div.cadre {
+    border: solid 1px #adadad;
+    width: 70%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffeb;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.cadrePub {
+    border: solid 1px #adadad;
+    width: 70%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffeb;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.cadre2 {
+    border: solid 1px #adadad;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffeb;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.cadre3 {
+    background-color: #ffffeb;
+    border: solid 1px #adadad;
+    width: 70%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+section div.photosMini {
+    margin: auto;
+    text-align: center;
+}
+section div.mini {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+    border: solid 1px #333333;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+section nav {
+    display: inline-block;
+    width: 25%;
+    font-weight: 700;
+    margin-right: 10px;
+    vertical-align: top;
+}
+section nav ul.listeCategories li {
+    list-style: none;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #333333;
+    margin-bottom: 5px;
+    background-color: #8f8f73;
+    margin-bottom: 5px;
+}
+section nav ul.listeCategories li a {
+    text-decoration: none;
+    color: #000000;
+}
+section nav ul.listeCategorie li a:hover {
+    color: #cc0000;
+}
+section nav ul.listeCategories li.cat,
+section nav ul.listeCategories li.parent {
+    border: solid 1px #888888;
+    margin-bottom: 1px;
+    height: 20px;
+    padding: 5px 0px 5px 0px;
+    background-image: url("./../GFXs/gradient21.png");
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+section nav ul.listeCategories li.actuel {
+    border: solid 1px #000000;
+    margin-bottom: 1px;
+    height: 20px;
+    padding: 5px 0px 5px 0px;
+    background-image: url("./../GFXs/gradient23.png");
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+section nav ul.listeCategories li:hover {
+    background-image: url("./../GFXs/gradient22.png");
+    border: #cc0000;
+}
+section div.colonneDroite {
+    display: inline-block;
+    width: 70%;
+    min-height: 500px;
+}
+section div.lienAnnonces {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+section div.lienAnnonces strong {
+    font-weight: 600;
+}
+/* CONTENU */
+/*FOOTER*/
+footer {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+/* Formulaires */
+form {
+    color: #68839b;
+    font-weight: 600;
+}
+fieldset {
+    border: solid 1px #adadad;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333333;
+}
+legend {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+input[type="submit"],
+input[type="radio"],
+label {
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    color: #e7882d;
+}
+input[type="text"],textarea,input[type="password"] {
+    color: #637f97;
+    font-size: 1em;
+    font-weight: 700;
+    border: solid 1px #8d8d8d;
+    border-radius: 3px;
+}
+/*FORMULAIRES */
